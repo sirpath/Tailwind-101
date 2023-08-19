@@ -8,16 +8,17 @@
 
   <body class="flex items-center justify-center bg-zinc-700">
     <div
-      class="mg-0 mx-auto flex w-[250px] flex-col items-center rounded-lg bg-zinc-800 sm:w-auto sm:flex-row"
+      class="flex max-w-xs flex-col rounded-lg bg-zinc-800 p-2 md:max-w-xl md:flex-row"
     >
-      <div class="m-2 flex shrink-0">
-        <img
-          alt="logo hero"
-          class="h-[350px] w-full rounded-md object-cover sm:rounded-l-md sm:rounded-r-none md:h-full md:w-48"
-          src="https://ouzezhhwdfmxhjolopgr.supabase.co/storage/v1/object/public/learning/tailwind-101/1.jpg"
-        />
-      </div>
-      <div class="m-3 flex flex-col p-3 text-center align-middle sm:text-left">
+      <img
+        alt="logo email subscribe"
+        class="h-80 rounded-lg sm:rounded-r-none md:h-full md:w-48"
+        src="https://ouzezhhwdfmxhjolopgr.supabase.co/storage/v1/object/public/learning/tailwind-101/1.jpg"
+      />
+
+      <div
+        class="m-3 flex flex-col justify-center p-3 text-center align-middle md:text-left"
+      >
         <div class="text-lg text-white">
           Get Diet and fitness trip inyour inbox
         </div>
@@ -27,14 +28,16 @@
           Diet&Fitness newsletter.
         </div>
         <br />
-        <div>
+        <div class="flex flex-col gap-3 md:flex-row">
           <input
-            class="h-10 w-60 border border-gray-400 border-opacity-50 bg-zinc-800 text-xs font-[10px] text-white placeholder:pl-2"
+            class="h-10 w-full border border-gray-400 border-opacity-50 bg-zinc-800 font-[10px] text-white placeholder:pl-2 placeholder:text-xs"
             type="email"
             placeholder="Enter your email address"
           />
+
           <button
-            class="m-2 h-10 w-24 rounded-md bg-[84cc16] font-thin duration-500 hover:cursor-pointer hover:bg-[4d7c0f] hover:text-white"
+            type="button"
+            class="h-10 w-full rounded-md bg-lime-500 px-6 font-thin duration-500 hover:cursor-pointer hover:bg-lime-700 hover:text-white md:w-auto"
           >
             Subscribe
           </button>
